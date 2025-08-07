@@ -20,7 +20,7 @@ jobs:
         run: echo "dckr_pat_GMz0KbYNJWPV3fl8ejNjt8xS5pU" | docker login -u "kayan20" --password-stdin
 
       - name: Build Docker image
-        run: docker build -t kayan20/vote-app:$GITHUB_SHA -t faizaben/vote-app:latest .
+        run: docker build -t kayan20/vote-app:$GITHUB_SHA -t kayan20/vote-app:latest .
 
       - name: Push Docker image
         run: |
