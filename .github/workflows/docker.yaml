@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Log in to Docker Hub
-        run: echo "${{Km20@2005 }}" | docker login -u "${{ Kayan2005 }}" --password-stdin
+        run: echo "Km20@2005 " | docker login -u "Kayan2005 " --password-stdin
 
       - name: Build Docker image
         run: docker build -t faizaben/vote-app:$GITHUB_SHA -t faizaben/vote-app:latest .
