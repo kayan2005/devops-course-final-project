@@ -1,14 +1,10 @@
-name: compose
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
 
-  version:"3.8"
-
-  services:
-      web:
-        build: .
-        ports:              
-        - "5000:5000"
-        depends_on:
-         - redis
-    
   redis:
     image: redis:alpine
